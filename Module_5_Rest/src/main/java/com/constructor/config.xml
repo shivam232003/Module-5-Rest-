@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<bean class="com.constructor.User" name="u1">
+		<constructor-arg value="1" />
+		<constructor-arg value="Java"/>
+		<constructor-arg value="7895656"/>
+	</bean>
+	
+	<bean class="com.constructor.User" name="u2">
+		<constructor-arg value="2" />
+		<constructor-arg value="php"/>
+		<constructor-arg value="95656"/>
+	</bean>
+</beans>

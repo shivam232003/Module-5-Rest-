@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.springlist.Student" id="s1">
+		<constructor-arg value="1"/>
+		<constructor-arg value="meet"/>
+		<constructor-arg value="vaghela"/>
+		<constructor-arg value="meet@gmail.com"/>
+		<constructor-arg value="19899"/>
+	</bean>
+	
+	<bean class="com.springlist.Student" id="s2">
+		<constructor-arg value="2"/>
+		<constructor-arg value="shivam"/>
+		<constructor-arg value="goswami"/>
+		<constructor-arg value="shivam@gmail.com"/>
+		<constructor-arg value="19899"/>
+	</bean>
+	
+	<bean class="com.springlist.Student" id="s3">
+		<constructor-arg value="3"/>
+		<constructor-arg value="raj"/>
+		<constructor-arg value="abc"/>
+		<constructor-arg value="raj@gmail.com"/>
+		<constructor-arg value="99899"/>
+	</bean>
+	
+	<bean class="com.springlist.Student" id="s4">
+		<constructor-arg value="4"/>
+		<constructor-arg value="krishna"/>
+		<constructor-arg value="gehlot"/>
+		<constructor-arg value="kgf@gmail.com"/>
+		<constructor-arg value="465655"/>
+	</bean>
+	
+	<bean class="com.springlist.Student" id="s5">
+		<constructor-arg value="5"/>
+		<constructor-arg value="jay"/>
+		<constructor-arg value="prajapati"/>
+		<constructor-arg value="jay@gmail.com"/>
+		<constructor-arg value="63542232"/>
+	</bean>
+	
+	<bean class="java.util.ArrayList" id="studentList">
+		<constructor-arg>
+			<list>
+				<ref bean="s1"/>
+				<ref bean="s2"/>
+				<ref bean="s3"/>
+				<ref bean="s4"/>
+				<ref bean="s5"/>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>
